@@ -56,17 +56,23 @@ a {
 
 .container {
     margin: 0 auto;
-    padding: 0 15px;
-    max-width: 1200px;
+    padding: 0;
+    max-width: 1240px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
     outline: none;
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1300px) {
     .container {
-        max-width: 1273px;
+        max-width: 1240px;
+    }
+}
+
+@media screen and (max-width:1299px) {
+    .container {
+        padding: 0 15px;
     }
 }
 
@@ -77,20 +83,20 @@ a {
     }
 }
 
-@media screen and (min-width:7678x) {
-    .d-sm-none {
+@media screen and (min-width:768px) {
+    .d-pc {
         display: block;
     }
-    .d-md-block {
+    .d-mob {
         display: none;
     }
 }
 
 @media screen and (max-width:767px) {
-    .d-sm-none {
+    .d-pc {
         display: none;
     }
-    .d-md-block {
+    .d-mob {
         display: block;
     }
 }

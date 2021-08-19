@@ -135,6 +135,7 @@
     }
     .about-img {
         width: 399px;
+        background: url(../img/info-img.jpg) no-repeat;
         @include tablet {
             width: 36%;
             background: url(../img/info-img.jpg) no-repeat;
@@ -142,11 +143,7 @@
             background-position: center;
         }
         @include mobile {
-            width: 100%;
-            height: 227px;
-            background: url(../img/info-img.jpg) no-repeat;
-            background-size: cover;
-            background-position: center;
+            display: none;
         }
         img {
             width: 100%;
@@ -363,7 +360,7 @@
     }
     &__text {
         width: 640px;
-        @include mobile {
+        @include tablet {
             width: 100%;
         }
         h2 {
