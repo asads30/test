@@ -1,0 +1,96 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    overflow-anchor: none;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--color-white);
+    scroll-behavior: smooth;
+}
+
+input:focus {
+    outline: 0;
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.site-container {
+    overflow: hidden;
+}
+
+.is-hidden {
+    display: none !important; // stylelint-disable-line declaration-no-important
+}
+
+.visually-hidden {
+    @include visually-hidden;
+}
+
+.btn-reset {
+    border: none;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.list-reset {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+    outline: none;
+}
+
+@media screen and (min-width:1200px) {
+    .container {
+        max-width: 1273px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width:7678x) {
+    .d-sm-none {
+        display: block;
+    }
+    .d-md-block {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .d-sm-none {
+        display: none;
+    }
+    .d-md-block {
+        display: block;
+    }
+}
